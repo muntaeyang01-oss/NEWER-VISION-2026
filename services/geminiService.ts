@@ -1,7 +1,9 @@
-
 import { GoogleGenAI, Type } from "@google/genai";
 
-const getAI = () => new GoogleGenAI({ apiKey: process.env.API_KEY || '' });
+const getAI = () => {
+  const apiKey = typeof process !== 'undefined' ? process.env.API_KEY : undefined;
+  return new GoogleGenAI({ apiKey: apiKey || '' });
+};
 
 export const generatePostContent = async (topic: string) => {
   const ai = getAI();

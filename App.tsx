@@ -167,6 +167,152 @@ const App: React.FC = () => {
             </div>
           </section>
 
+          {/* Staff Section (Organization Chart) - RESTORED */}
+          <section id="staff" className="py-24 bg-gray-50 overflow-hidden">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20">
+              <span className="text-purple-600 font-black tracking-widest uppercase text-sm mb-4 block">Organization</span>
+              <h2 className="text-4xl font-black text-gray-900 uppercase">Agency Structure</h2>
+              <div className="h-1.5 w-24 bg-purple-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+            
+            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+              <div className="flex flex-col items-center">
+                {/* CEO Level */}
+                <div className="relative group text-center flex flex-col items-center">
+                  <div className="w-80 bg-purple-100 text-purple-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-purple-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px]">
+                    <p className="text-[10px] text-purple-600 font-black tracking-[0.3em] uppercase mb-2">CEO / Representative</p>
+                    <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                      <span className="text-sm font-bold mr-2 text-purple-700">대표</span>
+                      John KIM
+                    </h3>
+                    <p className="text-xs font-bold text-purple-600 tracking-tight">총괄</p>
+                  </div>
+                </div>
+
+                {/* Straight Vertical Connector Line */}
+                <div className="w-0.5 h-12 bg-purple-200"></div>
+
+                {/* Managing Director */}
+                <div className="relative flex flex-col items-center w-full">
+                  <div className="flex flex-col items-center group relative z-10">
+                    <div className="w-80 bg-green-100 text-green-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-green-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                      <p className="text-[10px] text-green-600 font-black tracking-[0.3em] uppercase mb-2">Managing Director</p>
+                      <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                        <span className="text-sm font-bold mr-2 text-green-700">상무</span>
+                        GARNETT LIM
+                      </h3>
+                      <p className="text-xs font-bold text-green-600 tracking-tight whitespace-pre-wrap">정켓 운영 / 재무 관리</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Straight Vertical Connector Line */}
+                <div className="w-0.5 h-12 bg-green-200"></div>
+
+                {/* Operations Director */}
+                <div className="relative flex flex-col items-center">
+                  <div className="w-80 bg-blue-100 text-blue-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-blue-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                    <p className="text-[10px] text-blue-600 font-black tracking-[0.3em] uppercase mb-2">Operations Director</p>
+                    <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                      <span className="text-sm font-bold mr-2 text-blue-700">이사</span>
+                      KEVIN MUN
+                    </h3>
+                    <p className="text-xs font-bold text-blue-600 tracking-tight whitespace-pre-wrap">VIP / STAFF 관리</p>
+                  </div>
+                </div>
+
+                {/* T-Junction Connector for Sub-Teams */}
+                <div className="relative w-full flex flex-col items-center mt-0">
+                  <div className="w-0.5 h-12 bg-blue-200"></div>
+                  <div className="hidden lg:block w-[75%] h-0.5 bg-yellow-200"></div>
+                </div>
+
+                {/* Sub-Teams Container */}
+                <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-10 lg:gap-8 w-full mt-8 lg:mt-0">
+                  
+                  {/* Column 1: GENERAL MANAGER Group */}
+                  <div className="flex flex-col items-center">
+                    <div className="hidden lg:block w-0.5 h-12 bg-yellow-200"></div>
+                    <div className="group">
+                      <div className="w-80 bg-yellow-100 text-yellow-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-yellow-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                        <p className="text-[10px] text-yellow-600 font-black tracking-[0.3em] uppercase mb-2">GENERAL MANAGER</p>
+                        <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                          <span className="text-sm font-bold mr-2 text-yellow-700">부장</span>
+                          JASON JANG
+                        </h3>
+                        <p className="text-xs font-bold text-yellow-600 tracking-tight whitespace-pre-wrap">고객관리 / VIP운영 / 환전</p>
+                      </div>
+                    </div>
+                    <div className="w-0.5 h-12 bg-red-200"></div>
+                    <div className="group">
+                      <div className="w-80 bg-red-100 text-red-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-red-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                        <p className="text-[10px] text-red-600 font-black tracking-[0.3em] uppercase mb-2">SENIOR STAFF</p>
+                        <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                          <span className="text-sm font-bold mr-2 text-red-700">대리</span>
+                          DENNIS MUN
+                        </h3>
+                        <p className="text-xs font-bold text-red-600 tracking-tight whitespace-pre-wrap">고객관리 / VIP운영 / 환전</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Column 2: SENIOR MANAGER Group */}
+                  <div className="flex flex-col items-center">
+                    <div className="hidden lg:block w-0.5 h-12 bg-yellow-200"></div>
+                    <div className="group">
+                      <div className="w-80 bg-yellow-100 text-yellow-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-yellow-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                        <p className="text-[10px] text-yellow-600 font-black tracking-[0.3em] uppercase mb-2">SENIOR MANAGER</p>
+                        <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                          <span className="text-sm font-bold mr-2 text-yellow-700">차장</span>
+                          Ryan OK
+                        </h3>
+                        <p className="text-xs font-bold text-yellow-600 tracking-tight whitespace-pre-wrap">고객관리 / VIP운영 / 환전</p>
+                      </div>
+                    </div>
+                    <div className="w-0.5 h-12 bg-red-200"></div>
+                    <div className="group">
+                      <div className="w-80 bg-red-100 text-red-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-red-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                        <p className="text-[10px] text-red-600 font-black tracking-[0.3em] uppercase mb-2">STAFF</p>
+                        <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                          <span className="text-sm font-bold mr-2 text-red-700">사원</span>
+                          ERIC SONG
+                        </h3>
+                        <p className="text-xs font-bold text-red-600 tracking-tight whitespace-pre-wrap">고객관리 / VIP운영 / 환전</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Column 3: MANAGER Group */}
+                  <div className="flex flex-col items-center">
+                    <div className="hidden lg:block w-0.5 h-12 bg-yellow-200"></div>
+                    <div className="group">
+                      <div className="w-80 bg-yellow-100 text-yellow-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-yellow-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                        <p className="text-[10px] text-yellow-600 font-black tracking-[0.3em] uppercase mb-2">MANAGER</p>
+                        <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                          <span className="text-sm font-bold mr-2 text-yellow-700">매니저</span>
+                          MAE
+                        </h3>
+                        <p className="text-xs font-bold text-yellow-600 tracking-tight whitespace-pre-wrap">ROLLER 관리 및 UPDATE 총괄</p>
+                      </div>
+                    </div>
+                    <div className="w-0.5 h-12 bg-red-200"></div>
+                    <div className="group">
+                      <div className="w-80 bg-red-100 text-red-900 px-6 py-8 rounded-3xl shadow-2xl border-4 border-red-200 relative z-10 transition-transform group-hover:scale-105 flex flex-col items-center justify-center min-h-[140px] text-center">
+                        <p className="text-[10px] text-red-600 font-black tracking-[0.3em] uppercase mb-2">ROLLER</p>
+                        <h3 className="text-2xl font-black tracking-tight flex items-baseline justify-center mb-1">
+                          <span className="text-sm font-bold mr-2 text-red-700">STAFF</span>
+                          MARY, CASSY
+                        </h3>
+                        <p className="text-xs font-bold text-red-600 tracking-tight whitespace-pre-wrap">ROLL / UPDATE</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </section>
+
           {/* Service Section */}
           <section id="service" className="py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -203,6 +349,49 @@ const App: React.FC = () => {
             </div>
           </section>
 
+          {/* Details Section (Latest News) */}
+          <section id="details" className="py-24 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="flex items-end justify-between mb-16">
+                <div>
+                  <span className="text-purple-600 font-black tracking-widest uppercase text-sm mb-4 block">Fantastic Clark</span>
+                  <h2 className="text-4xl font-black text-gray-900 mb-2 uppercase italic transform -skew-x-3">DETAILS</h2>
+                  <div className="h-1.5 w-24 bg-purple-600 rounded-full mt-4"></div>
+                </div>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                {posts.map((post) => (
+                  <article key={post.id} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all border border-gray-100">
+                    <div className="relative h-64 overflow-hidden">
+                      <img 
+                        src={post.imageUrl} 
+                        alt={post.title} 
+                        className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="p-8">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors line-clamp-1">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-500 text-base leading-relaxed mb-8 line-clamp-2">
+                        {post.excerpt}
+                      </p>
+                      <a 
+                        href={blogLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-purple-600 text-base font-bold flex items-center group-hover:translate-x-1 transition-transform"
+                      >
+                        더 보기 <span className="ml-2">→</span>
+                      </a>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+
           {/* Reservation Section */}
           <section id="reservation" className="py-24 bg-white">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -221,7 +410,7 @@ const App: React.FC = () => {
                       <span className="mr-3 flex items-center justify-center w-6 h-6 bg-[#3c1e1e] rounded-lg">
                         <span className="text-[9px] text-[#FEE500] font-black">TALK</span>
                       </span>
-                      카톡으로 문의
+                      카톡문의
                     </a>
                     <p className="text-white/80 text-sm md:text-base font-medium mt-2 whitespace-pre-wrap">
                       NEWER VISION은 여행사가 아닌 카지노 정켓 에이전시 입니다. 정켓(VIP룸이용), 환전문의 부탁드리겠습니다.

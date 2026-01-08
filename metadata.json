@@ -1,0 +1,8 @@
+{
+  "name": "NEWER VISION - Clark Casino Agency",
+  "description": "A professional and modern casino agency management platform for NEWER VISION, featuring a user-friendly admin dashboard, CMS, and full customization options.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
